@@ -42,7 +42,7 @@ var hit1Rect2 = false
 var hit2Rect2 = false
 
 function preload() {
-  //Assign the image file to the variable
+  //Assign the image + sound file to the variables
   img = loadImage('deadMeme.jpg');
   bruh2 = loadSound('bruh2.mp3')
 }
@@ -98,6 +98,12 @@ function draw() {
     stroke(224, 58, 58);
     rect(400,500,10,100);
     rect(400,0,10,400);
+
+    // instructions
+    noStroke();
+    fill(255);
+    text('WASD or ARROW KEYS to move', 200, height/2)
+    text('SPACE to dash', 600, height/2)
   }
 
   else if (level ===2) {
@@ -236,12 +242,4 @@ function gamer() {
 
   print('cooldown', dashCooldown);
   print('key cancel', keyCancel, 'space cancel', spaceCancel);
-
-  // instructions
-  if (level = 1) {
-    noStroke();
-    fill(255);
-    text('WASD or ARROW KEYS to move', 200, height/2)
-    text('SPACE to dash', 600, height/2)
-  }
 }
