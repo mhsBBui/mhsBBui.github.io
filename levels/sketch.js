@@ -12,7 +12,7 @@ var y
 
 //Create a variable that will store our image + sound
 var img
-var sound
+var bruh2
 
 // gravity + velocity in y
 var velocity = 0
@@ -44,7 +44,7 @@ var hit2Rect2 = false
 function preload() {
   //Assign the image file to the variable
   img = loadImage('deadMeme.jpg');
-  sound = loadSound('bruh2.mp3')
+  bruh2 = loadSound('bruh2.mp3')
 }
 
 function setup() {
