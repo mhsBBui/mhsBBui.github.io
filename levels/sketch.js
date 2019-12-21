@@ -10,8 +10,9 @@ var level = 0
 var x
 var y
 
-//Create a variable that will store our image
+//Create a variable that will store our image + sound
 var img
+var sound
 
 // gravity + velocity in y
 var velocity = 0
@@ -43,6 +44,7 @@ var hit2Rect2 = false
 function preload() {
   //Assign the image file to the variable
   img = loadImage('deadMeme.jpg');
+  sound = loadSound('bruh2.mp3')
 }
 
 function setup() {
@@ -123,6 +125,7 @@ function draw() {
     textSize(16);
     text('Press enter to play again', width/2, height/2+50);
     image(img,295,390);
+    bruh2.play();
 
     //If the user presses enter, reset the x and y value and reset the level to level 1 (game)
     if (keyIsDown(ENTER)) {
