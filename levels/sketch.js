@@ -238,9 +238,10 @@ function gamer() {
   print('key cancel', keyCancel, 'space cancel', spaceCancel);
 
   // instructions
-  noStroke();
-  fill(255);
-  text('WASD or ARROW KEYS to move', 200, height/2)
-  text('SPACE to dash', 600, height/2)
-
+  if (level = 1) {
+    noStroke();
+    fill(255);
+    text('WASD or ARROW KEYS to move', 200, height/2)
+    text('SPACE to dash', 600, height/2)
+  }
 }
